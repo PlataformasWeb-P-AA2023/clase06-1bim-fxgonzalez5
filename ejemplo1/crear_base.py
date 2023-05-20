@@ -1,5 +1,3 @@
-from sqlalchemy import create_engine
-
 # se genera en enlace al gestor de base de
 # datos
 # para el ejemplo se usa la base de datos
@@ -14,8 +12,9 @@ Base = declarative_base()
 
 from sqlalchemy import Column, Integer, String
 
+# Herencia entre paréntesis '()'
 class Saludo(Base):
-    __tablename__ = 'saludo'
+    __tablename__ = 'comunicacion'
 
     id = Column(Integer, primary_key=True)
     mensaje = Column(String(200))

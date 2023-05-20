@@ -4,15 +4,15 @@ from sqlalchemy import create_engine
 # para el ejemplo se usa la base de datos
 # sqlite
 
-engine = create_engine('sqlite:///demobase.db', echo=True)
+# engine = create_engine('sqlite:///demobase.db', echo=True)
 
 # mysql
 # pip install mysql-connector-python
-# engine = create_engine("mysql+mysqlconnector://user:pass@localhost:3306/demo100", echo=True)
+# engine = create_engine("mysql+mysqlconnector://root:07102002@localhost:3306/demo100", echo=True)
 
 # postgres
 # sudo apt install libpq-dev
 # pip install psycopg2
-# engine = create_engine("postgresql+psycopg2://user:pass@localhost:5432/demo100", echo=True)
+engine = create_engine("postgresql+psycopg2://frantgod:07102002@localhost:5432/demo100", echo=True)
 
 
